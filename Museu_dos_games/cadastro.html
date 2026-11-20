@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,600&family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="./front.css">
+<title>Criar conta · Museu Interativo dos Games</title>
+</head>
+<body>
+<section class="screen auth-screen">
+  <div class="login-hero">
+    <div class="brandmark">
+      <div class="glyph">M</div>
+      <div class="word">Museu Interativo <b>dos Games</b></div>
+    </div>
+    <div class="hero-copy">
+      <div class="hero-eyebrow">Acervo digital · desde 1980</div>
+      <h1>A história dos games,<br><em>ano</em> a ano.</h1>
+      <p>Percorra uma linha do tempo viva, construída por quem joga. Dos fliperamas de 1980 aos lançamentos desta semana.</p>
+    </div>
+    <div class="hero-strip">
+      <div class="hero-strip-track">
+        <div class="tick on" style="left:2%"></div>
+        <div class="tick on" style="left:26%"></div>
+        <div class="tick on" style="left:50%"></div>
+        <div class="tick on" style="left:74%"></div>
+        <div class="tick on" style="left:97%"></div>
+      </div>
+      <div class="hero-strip-labels">
+        <span>1980</span><span>1990</span><span>2000</span><span>2010</span><span>hoje</span>
+      </div>
+    </div>
+  </div>
+  <div class="login-panel">
+    <div class="pass-card">
+      <div class="pass-header">
+        <div class="pass-title">Criar conta</div>
+        <div class="pass-no mono">NOVO PASSE</div>
+      </div>
+      <form class="pass-body" id="frm-cadastro">
+        <div class="field">
+          <label for="username">Usuário</label>
+          <input type="text" id="username" name="username" placeholder="como quer ser chamado" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@email.com" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" placeholder="mínimo de 6 caracteres" minlength="6" autocomplete="new-password" required>
+        </div>
+        <button type="submit" class="btn-enter">Entrar para o museu</button>
+      </form>
+      <div class="pass-footer">
+        Já tem acesso? <a href="/">Entrar</a>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="module" src="./cadastro.ts"></script>
+</body>
+</html>

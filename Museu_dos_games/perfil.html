@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,600&family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="./front.css">
+<title>Perfil · Museu Interativo dos Games</title>
+</head>
+<body>
+<section class="screen">
+  <header class="subnav"><a href="/home" class="glyph-mini" aria-label="Início">M</a><a href="/home" class="lnk">Linha do tempo</a><a href="/pesquisar" class="lnk">Pesquisar</a><a href="/perfil" class="lnk on">Perfil</a><a href="/criar" class="btn-sm push">+ Criar linha do tempo</a></header>
+  <div class="page-wrap">
+    <div class="perfil-head">
+      <div class="avatar" id="avatar"></div>
+      <div><h1 id="perfil-nome">Seu perfil</h1><p>Membro do museu · <span id="perfil-email"></span></p></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="stat-timelines">0</b><span>Linhas do tempo criadas</span></div>
+      <div class="stat"><b id="stat-avaliacoes">0</b><span>Avaliações recebidas</span></div>
+      <div class="stat"><b id="stat-media">—</b><span>Nota média</span></div>
+    </div>
+
+    <div class="sec-head">
+      <h2>Minhas linhas do tempo</h2>
+      <a href="/criar" class="btn-sm">+ Nova</a>
+    </div>
+    <div id="minhas"></div>
+    <div class="vazio" id="vazio">Você ainda não criou nenhuma linha do tempo.</div>
+
+    <a href="/" class="sair" id="sair">Sair do museu</a>
+  </div>
+</section>
+<script type="module" src="./perfil.ts"></script>
+</body>
+</html>

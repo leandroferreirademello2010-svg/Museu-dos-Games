@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,600&family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="./front.css">
+<title>Pesquisar · Museu Interativo dos Games</title>
+</head>
+<body>
+<section class="screen">
+  <header class="subnav"><a href="/home" class="glyph-mini" aria-label="Início">M</a><a href="/home" class="lnk">Linha do tempo</a><a href="/pesquisar" class="lnk on">Pesquisar</a><a href="/perfil" class="lnk">Perfil</a><a href="/criar" class="btn-sm push">+ Criar linha do tempo</a></header>
+  <div class="page-wrap">
+    <div class="page-head">
+      <div class="kicker">Explorar</div>
+      <h1>Pesquisar linhas do tempo</h1>
+      <p>Encontre linhas do tempo criadas pela comunidade e filtre por avaliação.</p>
+    </div>
+    <div class="filtros">
+      <input type="search" id="q" placeholder="Buscar por título..." aria-label="Buscar por título">
+      <select id="ordem" aria-label="Ordenar">
+        <option value="melhor">Melhor avaliadas</option>
+        <option value="pior">Pior avaliadas</option>
+        <option value="mais">Mais avaliações</option>
+      </select>
+      <select id="minav" aria-label="Mínimo de avaliações">
+        <option value="0">Qualquer nº de avaliações</option>
+        <option value="1">1+ avaliação</option>
+        <option value="5">5+ avaliações</option>
+        <option value="10">10+ avaliações</option>
+      </select>
+    </div>
+    <div id="resultados"></div>
+    <div class="vazio" id="vazio">Nenhuma linha do tempo encontrada.</div>
+  </div>
+</section>
+<script type="module" src="./pesquisar.ts"></script>
+</body>
+</html>
